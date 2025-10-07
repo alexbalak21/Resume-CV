@@ -62,9 +62,11 @@ const experiences: Experience[] = [
 
 export function Experience() {
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 border-l ps-2">
       <div className="flex items-center gap-3">
+        <div className="w-8 h-8 rounded-full bg-white shadow-lg flex items-center justify-center">
         <div className="w-2 h-2 rounded-full bg-purple-600 flex-shrink-0" />
+        </div>
         <h2 className="text-2xl font-bold text-gray-900">Experience</h2>
       </div>
 
