@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Font Preview</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 24px;
+            font-family: Arial, sans-serif;
+            background: #f7f7f7;
+            color: #222;
+        }
+
+        h1 {
+            margin-bottom: 16px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+        }
+
+        .sample {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 16px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+        }
+
+        .label {
+            font-size: 12px;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 8px;
+        }
+
+        .text {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>System/Web-Safe Font Preview (No Imports)</h1>
+    <div class="grid">
+        <div class="sample" style="font-family: Arial, sans-serif;">
+            <div class="label">Arial, sans-serif</div>
+            <div class="text">Pack my box with five dozen liquor jugs.</div>
+        </div>
+        <div class="sample" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
+            <div class="label">Helvetica Neue / Helvetica</div>
+            <div class="text">Pack my box with five dozen liquor jugs.</div>
+        </div>
+        <div class="sample" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+            <div class="label">Segoe UI, Tahoma, Geneva, Verdana</div>
+            <div class="text">Pack my box with five dozen liquor jugs.</div>
+        </div>
+        <div class="sample" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+            <div class="label">Verdana, Geneva, Tahoma</div>
+            <div class="text">Pack my box with five dozen liquor jugs.</div>
+        </div>
+        <div class="sample" style="font-family: 'Trebuchet MS', Tahoma, sans-serif;">
+            <div class="label">Trebuchet MS</div>
+            <div class="text">Pack my box with five dozen liquor jugs.</div>
+        </div>
+        <div class="sample" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+            <div class="label">Georgia, Times New Roman, Times</div>
+            <div class="text">Pack my box with five dozen liquor jugs.</div>
+        </div>
+        <div class="sample" style="font-family: 'Times New Roman', Times, serif;">
+            <div class="label">Times New Roman, Times</div>
+            <div class="text">Pack my box with five dozen liquor jugs.</div>
+        </div>
+        <div class="sample" style="font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;">
+            <div class="label">Palatino Linotype, Book Antiqua, Palatino</div>
+            <div class="text">Pack my box with five dozen liquor jugs.</div>
+        </div>
+        <div class="sample" style="font-family: Garamond, serif;">
+            <div class="label">Garamond</div>
+            <div class="text">Pack my box with five dozen liquor jugs.</div>
+        </div>
+        <div class="sample" style="font-family: 'Courier New', Courier, monospace;">
+            <div class="label">Courier New, Courier</div>
+            <div class="text">Pack my box with five dozen liquor jugs.</div>
+        </div>
+        <div class="sample" style="font-family: Consolas, 'Lucida Console', 'Liberation Mono', Menlo, Monaco, monospace;">
+            <div class="label">Consolas, Lucida Console, Menlo, Monaco</div>
+            <div class="text">Pack my box with five dozen liquor jugs.</div>
+        </div>
+        <div class="sample" style="font-family: 'Lucida Sans', 'Lucida Sans Unicode', 'Lucida Grande', Geneva, Verdana, sans-serif;">
+            <div class="label">Lucida Sans family</div>
+            <div class="text">Pack my box with five dozen liquor jugs.</div>
+        </div>
+        <div class="sample" style="font-family: Impact, Charcoal, sans-serif;">
+            <div class="label">Impact, Charcoal</div>
+            <div class="text">Pack my box with five dozen liquor jugs.</div>
+        </div>
+        <div class="sample" style="font-family: 'Comic Sans MS', 'Comic Sans', cursive;">
+            <div class="label">Comic Sans MS (if installed)</div>
+            <div class="text">Pack my box with five dozen liquor jugs.</div>
+        </div>
+    </div>
+</body>
+</html>

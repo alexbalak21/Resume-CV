@@ -3,6 +3,10 @@
     --page-height: 1062px;
     --page-width: calc(var(--page-height) / 1.4142135623730950488016887242097);
     --photo-size: 120px;
+    --color: #000;
+    --background : #fff;
+    --border-color: #ddd;
+    --primary-color: #0047AB;
 }
 
 *{
@@ -15,7 +19,7 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   background: #f4f4f4;
-  color: #333;
+  color: var(--color);
   padding: 1em;
   font-family: Arial, sans-serif;
   
@@ -39,7 +43,7 @@ body {
 
 header {
     grid-area: header;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--border-color);
     display: flex;
     width: 100%;
     height: 150px;
@@ -54,8 +58,7 @@ header h1 {
     width: 30%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center;   
 }
 
 .photo {
@@ -76,11 +79,66 @@ header h1 {
 
 aside {
     grid-area: aside;
-    border-right: 1px solid #ddd;
+    border-right: 1px solid var(--border-color);
     padding-right: 20px;
 }
 
 main {
     grid-area: main;
     overflow-y: auto;
+}
+
+a{
+    color: var(--color);
+    text-decoration: none;
+    margin-bottom: 4px;
+
+}
+
+section {
+    margin: 20px;
+}
+
+h3 {
+    margin-bottom: 6px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 6px;
+    color: var(--primary-color);
+}
+
+.primary {
+    color: var(--primary-color);
+}
+
+.secondary {
+    color: #555;
+}
+
+/* Print only the page at PDF dimensions */
+@media print {
+    @page {
+        size: A4 portrait;
+        margin: 0;
+    }
+
+    body {
+        background: #fff;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    body > *:not(.page) {
+        display: none;
+    }
+
+    .page {
+        width: 210mm;
+        height: 297mm;
+        box-shadow: none;
+    }
+
+    main {
+        overflow: visible;
+    }
 }
