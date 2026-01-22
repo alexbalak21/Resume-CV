@@ -150,8 +150,6 @@ ul li {
 .skills ul  {
     list-style: none;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 /* Print only the page at PDF dimensions */
