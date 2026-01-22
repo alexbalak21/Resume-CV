@@ -1,0 +1,80 @@
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #222;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 1.5em;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  padding: 2em;
+  gap: 2em;
+}
+
+aside {
+  width: 30%;
+  background: #fff;
+  padding: 1em;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+
+main {
+  width: 70%;
+  background: #fff;
+  padding: 1em;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+
+h2 {
+  margin-top: 1em;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 4px;
+}
+
+ul {
+  padding-left: 1em;
+}
+
+.contact p,
+.skills li,
+.education p {
+  margin: 0.5em 0;
+}
+
+
+
+/* Force A4 size when printing */
+@page {
+  size: A4;
+  margin: 0;
+}
+
+/* Print layout adjustments */
+@media print {
+  body {
+    width: 210mm;
+    height: 297mm;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    flex-direction: row;
+    gap: 1.5em;
+    padding: 1.5em;
+  }
+
+  header {
+    padding: 1em 0;
+  }
+}
+
