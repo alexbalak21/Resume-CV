@@ -152,6 +152,38 @@ ul li {
     padding: 0;
 }
 
+
+.education{
+    margin: 0;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 25px;
+}
+
+.education h4 {
+    margin-bottom: 6px;
+}
+
+.education div {
+    margin-bottom: 20px;
+}
+
+.ibm-svg {
+    height: 27px;
+    width: 27px;
+    margin-right: 4px;
+    vertical-align: middle;
+    color: var(--primary);
+}
+
+.education-logo {
+    height: 32px;
+    width: 32px;
+    margin-right: 4px;
+    vertical-align: middle;
+    color: red !important;
+}
+
 /* Print only the page at PDF dimensions */
 @media print {
     @page {
