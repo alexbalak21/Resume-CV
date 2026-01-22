@@ -6,9 +6,10 @@
     --color: #000;
     --background : #fff;
     --border-color: #ddd;
-    --primary-color: #0047AB;
-    --aside-size: 35%;
-    --main-size: 65%;
+    --primary: #0047AB;
+    --secondary: #555;
+    --aside-size: 33%;
+    --main-size: 67%;
 }
 
 *{
@@ -81,6 +82,7 @@ header h1 {
 
 aside {
     grid-area: aside;
+    margin-top: 20px;
     border-right: 1px solid var(--border-color);
     padding-right: 20px;
 }
@@ -102,12 +104,12 @@ a{
 }
 
 i{
-    color: var(--primary-color);
+    color: var(--primary);
     margin-right: 4px;
 }
 
 section {
-    margin: 12px;
+    margin: 20px;
     margin-top: 20px;
 }
 
@@ -116,20 +118,33 @@ h3 {
 
     border-bottom: 1px solid var(--border-color);
     padding-bottom: 6px;
-    color: var(--primary-color);
+    color: var(--primary);
 }
 
 .primary {
-    color: var(--primary-color);
+    color: var(--primary);
 }
 
 .secondary {
-    color: #555;
+    color: var(--secondary) !important;
 }
 
-.contact
+
+section.contact
 {
+
     line-height: 1.9rem;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 5px;
+}
+
+ul li {
+    margin-left: 20px;
+}
+
+.summary{
+    margin-top: 25px;
 }
 
 /* Print only the page at PDF dimensions */
