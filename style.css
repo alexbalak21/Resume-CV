@@ -1,6 +1,6 @@
 /* height  */
 :root {
-    --page-height: 100vh;
+    --page-height: 120vh;
     --page-width: calc(var(--page-height) / 1.4142135623730950488016887242097);
 }
 
@@ -36,8 +36,7 @@ body {
 header {
     grid-area: header;
     border-bottom: 1px solid #ddd;
-    margin-left: 10px;
-    margin-right: 10px;
+    padding: 20px;
 }
 
 header h1 {
