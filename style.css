@@ -1,7 +1,8 @@
 /* height  */
 :root {
-    --page-height: 120vh;
+    --page-height: 1062px;
     --page-width: calc(var(--page-height) / 1.4142135623730950488016887242097);
+    --photo-size: 120px;
 }
 
 *{
@@ -16,6 +17,7 @@ body {
   background: #f4f4f4;
   color: #333;
   padding: 1em;
+  font-family: Arial, sans-serif;
   
 }
 
@@ -23,6 +25,8 @@ body {
     height: var(--page-height);
     width: var(--page-width);
     margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-bottom: 20px;
     background-color: white;
     display: grid;
@@ -36,11 +40,38 @@ body {
 header {
     grid-area: header;
     border-bottom: 1px solid #ddd;
-    padding: 20px;
+    display: flex;
+    width: 100%;
+    height: 150px;
 }
 
 header h1 {
-    margin-bottom: 5px;
+    margin-bottom: 5px; 
+}
+
+.photo-container {
+    margin-left: -10px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.photo {
+    width: var(--photo-size);
+    height: var(--photo-size);
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    display: inline-block
+}
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
 }
 
 aside {
