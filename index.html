@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex – Resume</title>
+
+  <style>
+    :root {
+      --text: #111;
+      --bg: #fff;
+      --accent: #444;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #eee;
+        --bg: #111;
+        --accent: #bbb;
+      }
+    }
+
+    body {
+      font-family: system-ui, sans-serif;
+      margin: 40px auto;
+      max-width: 800px;
+      line-height: 1.5;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    h1, h2 {
+      margin-bottom: 0.2em;
+    }
+
+    h2 {
+      border-bottom: 1px solid var(--accent);
+      padding-bottom: 4px;
+      margin-top: 1.5em;
+    }
+
+    .section {
+      margin-bottom: 1.2em;
+    }
+
+    .job {
+      margin-bottom: 1em;
+    }
+
+    /* Print styles for PDF export */
+    @media print {
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Alex [Last Name]</h1>
+    <p>Web Developer • Lyon, France • alex@example.com • github.com/alex</p>
+  </header>
+
+  <section class="section">
+    <h2>Profile</h2>
+    <p>Minimalist web developer focused on theme‑adaptive UI, modular JavaScript, and clean architecture.</p>
+  </section>
+
+  <section class="section">
+    <h2>Skills</h2>
+    <ul>
+      <li>JavaScript (ES6+), async/await, DOM architecture</li>
+      <li>Spring Boot, Stripe integration</li>
+      <li>Docker, CI/CD, containerized deployments</li>
+      <li>SVG optimization, theme‑adaptive UI</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Experience</h2>
+
+    <div class="job">
+      <strong>Senior Web Developer — Freelance</strong><br>
+      <em>2022–Present</em>
+      <ul>
+        <li>Built modular, theme‑adaptive UI components for client dashboards.</li>
+        <li>Developed backend microservices with Spring Boot and Docker.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <strong>Full‑Stack Developer — Company Name</strong><br>
+      <em>2020–2022</em>
+      <ul>
+        <li>Implemented Stripe billing flows with transparent test environments.</li>
+        <li>Optimized SPA asset pipelines for zero 404s and perfect caching.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Education</h2>
+    <p>BSc in Computer Science — University Name</p>
+  </section>
+</body>
+</html>
