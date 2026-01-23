@@ -1,0 +1,10 @@
+<svg width="800" height="800" viewBox="0 0 36 26" xmlns="http://www.w3.org/2000/svg">
+  <!-- Blue (darkest) -->
+  <rect x="0" y="0" width="12" height="26" fill="currentColor" opacity="0.35"/>
+
+  <!-- White (lightest) -->
+  <rect x="12" y="0" width="12" height="26" fill="currentColor" opacity="0.10"/>
+
+  <!-- Red (medium) -->
+  <rect x="24" y="0" width="12" height="26" fill="currentColor" opacity="0.55"/>
+</svg>

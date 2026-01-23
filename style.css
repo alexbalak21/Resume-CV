@@ -168,20 +168,12 @@ ul li {
     margin-bottom: 20px;
 }
 
-.ibm-svg {
-    height: 27px;
-    width: 27px;
-    margin-right: 4px;
-    vertical-align: middle;
-    color: var(--primary);
-}
 
-.education-logo {
+.svg-icon {
     height: 32px;
     width: 32px;
-    margin-right: 4px;
     vertical-align: middle;
-    color: red !important;
+    color: var(--primary);
 }
 
 /* Print only the page at PDF dimensions */
