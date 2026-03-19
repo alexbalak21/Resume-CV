@@ -71,12 +71,20 @@ h3 {
     color: var(--primary);
 }
 
+h4{
+    margin-top: 8px;
+}
+
 .photo-container {
     margin-left: -10px;
     width: var(--aside-size);
     display: flex;
     align-items: center;
     justify-content: center;   
+}
+
+.mt-2 {
+    margin-top: 8px;
 }
 
 .photo {
@@ -173,7 +181,7 @@ ul li {
 }
 
 .education div {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 
 
