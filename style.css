@@ -146,7 +146,7 @@ section.contact
     line-height: 1.9rem;
     margin-left: 16px;
     margin-right: 16px;
-    margin-top: 1px;
+    margin-top: 2px;
 }
 
 ul li {
@@ -210,5 +210,59 @@ ul li {
 
     main {
         overflow: visible;
+        margin-top: 1px;
     }
+}
+
+.lang-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lang-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+    margin-left: 0 !important; /* FIX misalignment caused by global ul li rule */
+}
+
+/* Colonne 1 : nom de la langue */
+.lang-label {
+    width: 120px;
+    margin-right: 10px; /* espace entre langue et cercles */
+}
+
+/* Colonne 2 : cercles */
+.dots {
+    width: 60px; /* largeur fixe pour aligner les cercles */
+    text-align: left;
+}
+
+.dots::before {
+    content: "●●●";
+    letter-spacing: 4px;
+    color: #ccc;
+    font-size: 18px;
+}
+
+.dots[data-level="1"]::before {
+    content: "●○○";
+    color: #0047AB;
+}
+
+.dots[data-level="2"]::before {
+    content: "●●○";
+    color: #0047AB;
+}
+
+.dots[data-level="3"]::before {
+    content: "●●●";
+    color: #0047AB;
+}
+
+/* Colonne 3 : description entre parenthèses */
+.lang-desc {
+    color: var(--secondary);
+    margin-left: 8px;
 }
