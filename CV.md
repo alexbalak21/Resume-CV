@@ -1,6 +1,6 @@
 # Alexandre Balakirev
 
-Développeur Web Full Stack passionné par les nouvelles technologies et la programmation.  
+Développeur Web Full Stack passionné par la programmation et les nouvelles technologies.
 Dynamique, rigoureux et doté d'une grande capacité d'adaptation, j'aime apprendre en continu et relever de nouveaux défis.  
 Mon objectif : concevoir des solutions adaptées et évolutives, en alliant expertise technique et curiosité permanente.
 
