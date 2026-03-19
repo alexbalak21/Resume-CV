@@ -82,7 +82,8 @@ header h1 {
 
 aside {
     grid-area: aside;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border-right: 1px solid var(--border-color);
     padding-right: 20px;
 }
