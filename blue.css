@@ -1,0 +1,209 @@
+/* ---------- PRINT: true A4 ---------- */
+@page {
+    size: A4;
+    margin: 0;
+}
+
+@media print {
+
+    /* Force browser to print colors */
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background: white !important;
+    }
+
+    .page {
+        width: 210mm !important;
+        height: 297mm !important;
+        margin: 0 !important;
+        box-shadow: none !important;
+        display: flex;
+    }
+
+    aside {
+        background-color: var(--blue) !important;
+        color: white !important;
+    }
+
+    main {
+        background: white !important;
+        color: black !important;
+    }
+
+    .timeline::before {
+        background: var(--grey) !important;
+    }
+
+    .dot {
+        background: white !important;
+        border-color: var(--blue) !important;
+    }
+
+    .timeline-title::before {
+        color: var(--blue) !important;
+    }
+}
+
+/* ---------- VARIABLES ---------- */
+:root {
+    --blue: #2380A2;
+    --grey: #C1C1C1;
+}
+
+/* ---------- SCREEN: A4 preview ---------- */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+/* A4 page on screen */
+.page {
+    display: flex;
+    flex-direction: row;
+    width: 210mm;
+    height: 297mm;
+    background-color: white;
+    margin: 16px auto;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.18);
+}
+
+/* Sidebar */
+aside {
+    width: 35%;
+    background-color: var(--blue);
+    color: white;
+    padding: 15mm 8mm;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 12mm;
+}
+
+/* Profile picture placeholder */
+.profile-pic {
+    width: 100%;
+    height: 40mm;
+    background: rgba(255,255,255,0.2);
+    border-radius: 4px;
+}
+
+/* Sidebar section titles */
+aside h3 {
+    margin: 0 0 4mm 0;
+    font-size: 13pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+    padding-bottom: 2mm;
+}
+
+/* Sidebar content */
+.aside-section {
+    font-size: 10pt;
+    line-height: 1.4;
+}
+
+.aside-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.aside-section li {
+    margin-bottom: 4mm;
+}
+
+/* Main content */
+main {
+    flex: 1;
+    background-color: white;
+    padding: 10mm;
+    box-sizing: border-box;
+}
+
+/* TIMELINE */
+.timeline {
+    position: relative;
+    padding-left: 40px;
+    margin-top: 10mm;
+}
+
+/* Vertical line */
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: var(--grey);
+}
+
+/* Entry */
+.entry {
+    position: relative;
+    margin-bottom: 20mm;
+}
+
+/* Dot */
+.entry .dot {
+    position: absolute;
+    left: -26.5px;
+    top: 0;
+    width: 12px;
+    height: 12px;
+    background: white;
+    border: 1px solid var(--blue);
+    border-radius: 50%;
+}
+
+/* Entry text */
+.entry .content {
+    padding-left: 20px;
+}
+
+.entry h3 {
+    margin: 0;
+    font-size: 12pt;
+    color: var(--blue);
+}
+
+.entry h4 {
+    margin: 2mm 0 1mm 0;
+    font-size: 11pt;
+}
+
+.entry p {
+    margin: 0 0 2mm 0;
+    font-size: 10pt;
+}
+
+/* SECTION TITLE WITH + ICON */
+.timeline-title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10mm;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+/* Blue + icon */
+.timeline-title::before {
+    content: "+";
+    color: var(--blue);
+    font-size: 18pt;
+    font-weight: normal;
+    margin-right: 6px;
+    position: absolute;
+    left: -26.2px;
+    top: 0;
+}
