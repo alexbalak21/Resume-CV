@@ -25,7 +25,7 @@ body {
   color: var(--color);
   padding: 1em;
   font-family: Arial, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .page{
@@ -177,11 +177,11 @@ ul li {
 }
 
 .education h4 {
-    margin-bottom: 6px;
+    margin-bottom: 0px;
 }
 
 .education div {
-    margin-bottom: 16px;
+    margin-bottom: 7px;
 }
 
 
@@ -269,7 +269,21 @@ ul li {
     color: #0047AB;
 }
 
+/* Colonne 3 : description entre parenthèses */
 .lang-desc {
     color: var(--secondary);
     margin-left: 8px;
+}
+
+
+.strengths  ul {
+    list-style: none;
+    padding: 0;
+    font-size: 15px;
+}
+
+.hobbies ul {
+    list-style: none;
+    padding: 0;
+    font-size: 15px;
 }
