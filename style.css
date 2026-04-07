@@ -168,6 +168,11 @@ ul li {
     font-size: 15px;
 }
 
+.skills ul li {
+    margin-bottom: 8px;
+    margin-left: 3px;
+}
+
 
 .education{
     margin: 0;
@@ -182,6 +187,12 @@ ul li {
 
 .education div {
     margin-bottom: 16px;
+}
+
+.hobbies ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
 }
 
 
