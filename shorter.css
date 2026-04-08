@@ -1,33 +1,38 @@
 /* height  */
 :root {
-    --page-height: 1020px; /* Reduced from 1062px */
+    --page-height: 1020px;
+    /* Reduced from 1062px */
     --page-width: calc(var(--page-height) / 1.4142135623730950488016887242097);
     --photo-size: 116px;
     --color: #000;
-    --background : #fff;
+    --background: #fff;
     --border-color: #ddd;
     --primary: #0047AB;
     --secondary: #555;
     --aside-size: 33%;
     --main-size: 67%;
+    --fs-xl: 24px;
+    --fs-lg: 24px;
+    --fs-md: 16px;
+    --fs-sm: 14px;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.5;
-  background: #f4f4f4;
-  color: var(--color);
-  padding: 1em;
-  font-size: 16px;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background: #f4f4f4;
+    color: var(--color);
+    padding: 1em;
+    font-size: 16px;
 }
 
-.page{
+.page {
     height: var(--page-height);
     width: var(--page-width);
     margin: auto;
@@ -48,33 +53,38 @@ header {
     border-bottom: 1px solid var(--border-color);
     display: flex;
     width: 100%;
-    height: 135px; /* Slightly reduced */
+    height: 135px;
+    /* Slightly reduced */
 }
 
 header h1 {
-    margin-bottom: 5px; 
+    margin-bottom: 5px;
 }
 
 h1 {
-    font-size: 24px;
+    font-size: var(--fs-xl);
     color: var(--primary);
 }
 
 h2 {
-    font-size: 23px; /* Reduced */
+    font-size: var(--fs-lg);
+    /* Reduced */
     color: var(--secondary);
 }
 
 h3 {
-    font-size: 17px; /* Reduced */
+    font-size: var(--fs-md); 
+    /* Reduced */
     margin-bottom: 4px;
     border-bottom: 1px solid var(--border-color);
     padding-bottom: 4px;
     color: var(--primary);
 }
 
-h4{
-    margin-top: 4px; /* Reduced */
+h4 {
+    margin-top: 4px;
+    font-size: var(--fs-md);
+    /* Reduced */
 }
 
 .photo-container {
@@ -82,8 +92,44 @@ h4{
     width: var(--aside-size);
     display: flex;
     align-items: center;
-    justify-content: center;   
+    justify-content: center;
 }
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 13px;
+    margin-bottom: 1px;
+}
+
+.role {
+    font-weight: bold;
+    color: black;
+    font-size: 17px;
+}
+.at {
+    color: #777;
+    font-size: 15px;
+    margin-left: 7px;
+}
+
+.company {
+    font-weight: bold;
+    color: var(--primary);
+    margin-left: 7px;
+    flex-grow: 1;
+    font-size: 17px;
+}
+
+.date {
+    font-weight: bold;
+    color: #666;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+
 
 .mt-2 {
     margin-top: 8px;
@@ -108,7 +154,8 @@ h4{
 
 aside {
     grid-area: aside;
-    margin-top: 12px; /* Reduced */
+    margin-top: 12px;
+    /* Reduced */
     margin-bottom: 8px;
     border-right: 1px solid var(--border-color);
     padding-right: 18px;
@@ -118,20 +165,43 @@ main {
     grid-area: main;
 }
 
-a{
+a {
     color: var(--color);
     text-decoration: none;
     margin-bottom: 4px;
 }
 
-i{
+i {
     color: var(--primary);
     margin-right: 4px;
 }
 
 section {
-    margin: 12px; /* Reduced from 16px */
+    margin: 12px;
+    /* Reduced from 16px */
 }
+
+.experience ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.experience ul li {
+    margin-bottom: 6px;
+    padding-left: 14px;
+    position: relative;
+}
+
+.experience ul li::before {
+    content: "●";
+    color: var(--primary);
+    position: absolute;
+    left: -5px;
+    top: 3px;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
 
 .primary {
     color: var(--primary);
@@ -142,40 +212,46 @@ section {
 }
 
 section.contact {
-    line-height: 1.8rem; /* Slightly reduced */
+    line-height: 1.8rem;
+    /* Slightly reduced */
     margin-left: 16px;
     margin-right: 16px;
     margin-top: 2px;
 }
 
 ul li {
-    margin-left: 18px; /* Slightly reduced */
+    margin-left: 18px;
+    /* Slightly reduced */
 }
 
-.skills ul  {
+.skills ul {
     list-style: none;
     padding: 0;
     font-size: 15px;
 }
 
 .skills ul li {
-    margin-bottom: 6px; /* Reduced */
+    margin-bottom: 6px;
+    /* Reduced */
     margin-left: 3px;
 }
 
-.education{
+.education {
     margin: 0;
     margin-left: 8px;
     margin-right: 8px;
-    margin-top: 20px; /* Reduced */
+    margin-top: 20px;
+    /* Reduced */
 }
 
 .education h4 {
-    margin-bottom: 4px; /* Reduced */
+    margin-bottom: 4px;
+    /* Reduced */
 }
 
 .education div {
-    margin-bottom: 14px; /* Reduced */
+    margin-bottom: 14px;
+    /* Reduced */
 }
 
 .hobbies {
@@ -209,7 +285,7 @@ ul li {
         justify-content: center;
     }
 
-    body > *:not(.page) {
+    body>*:not(.page) {
         display: none;
     }
 
