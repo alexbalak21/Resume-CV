@@ -178,6 +178,10 @@ ul li {
     margin-bottom: 14px; /* Reduced */
 }
 
+.hobbies {
+    margin-top: 20px;
+}
+
 .hobbies ul {
     list-style: none;
     padding: 0;
