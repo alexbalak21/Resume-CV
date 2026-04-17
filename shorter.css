@@ -241,7 +241,10 @@ ul li {
     margin-left: 8px;
     margin-right: 8px;
     margin-top: 20px;
-    /* Reduced */
+}
+
+.education h4 {
+    margin-bottom: 1px !important;
 }
 
 .job{
