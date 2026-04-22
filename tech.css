@@ -161,6 +161,11 @@ ul li {
     margin-left: 20px;
 }
 
+.skills ul li {
+    margin-left: 0px;
+    margin-top: 6px;
+}
+
 
 .skills ul  {
     list-style: none;
