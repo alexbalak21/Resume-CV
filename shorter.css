@@ -308,22 +308,26 @@ ul li {
     display: flex;
     align-items: center;
     margin-bottom: 4px;
-    margin-left: 0 !important;
+    margin-left: 0 !important; /* FIX misalignment caused by global ul li rule */
+    flex-wrap: wrap;
 }
 
+/* Colonne 1 : nom de la langue */
 .lang-label {
-    width: 120px;
-    margin-right: 10px;
+    width: 60px;
+    margin-right: 4px; /* espace entre langue et cercles */
 }
 
+/* Colonne 2 : cercles */
 .dots {
-    width: 60px;
+    width: 40px; /* enlarge area for bigger dots */
     text-align: left;
+    margin-right: 8px;
 }
 
 .dots::before {
     content: "●●●";
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     color: #ccc;
     font-size: 18px;
 }
@@ -345,5 +349,5 @@ ul li {
 
 .lang-desc {
     color: var(--secondary);
-    margin-left: 8px;
+    margin-left: 4px;
 }
