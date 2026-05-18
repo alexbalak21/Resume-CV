@@ -242,25 +242,26 @@ ul li {
     align-items: center;
     margin-bottom: 4px;
     margin-left: 0 !important; /* FIX misalignment caused by global ul li rule */
+    flex-wrap: wrap;
 }
 
 /* Colonne 1 : nom de la langue */
 .lang-label {
-    width: 120px;
-    margin-right: 10px; /* espace entre langue et cercles */
+    width: 75px;
+    margin-right: 6px; /* espace entre langue et cercles */
 }
 
 /* Colonne 2 : cercles */
 .dots {
-    width: 60px; /* largeur fixe pour aligner les cercles */
+    width: 30px; /* largeur fixe pour aligner les cercles */
     text-align: left;
 }
 
 .dots::before {
     content: "●●●";
-    letter-spacing: 4px;
+    letter-spacing: 1px;
     color: #ccc;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .dots[data-level="1"]::before {
@@ -282,6 +283,8 @@ ul li {
 .lang-desc {
     color: var(--secondary);
     margin-left: 8px;
+    flex: 1 1 0%;
+    min-width: 0;
 }
 
 
